@@ -1,0 +1,52 @@
+1) Створити та зберегти hello.v:
+
+module hello(A, B);
+    input A;
+    output B;
+    assign B = A;
+endmodule
+
+2) Створити та зберегти hello_tb.v:
+
+`timescale 1ns / 1ns
+`include "hello.v"
+
+module hello_tb;
+    reg A;
+    wire B;
+    hello uut(A,B);
+
+    initial begin
+        $dumpfile("hello_tb.vcd");
+        $dumpvars(0, hello_tb);
+        A = 0;
+        #20;
+        A = 1;
+        #20;
+        A = 0;
+        #20;
+        $display("test complete");
+    end
+endmodule
+
+3) Виконати - [ iverilog -o hello_tb.vvp hello_tb.v hello.v ]
+=> створює hello_tb.vvp 
+2) Виконати - [ vvp hello_tb.vvp ]
+=> запуск hello_tb.vvp -> отримуємо hello_tb.vcd
+3) Запустити hello_tb.vcd за допомогою GTKWave - [ gtkwave hello_tb.vcd ] 
+=> відкриваємо програму GTKWav для перегляду діаграми сигналу
+
+---------------------------------------
+
+hello.v        → опис логіки
+hello_tb.v     → тести + генерація VCD
+     ↓
+iverilog       → компіляція
+     ↓
+hello_tb.vvp   → код симуляції
+     ↓
+vvp            → симуляція у часі
+     ↓
+hello_tb.vcd   → часові діаграми
+     ↓
+GTKWave        → перегляд сигналів
