@@ -1,0 +1,101 @@
+$date
+	Sat Mar 21 18:52:17 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module summator_tb $end
+$var wire 1 ! s $end
+$var wire 1 " h_c $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$var integer 32 & i [31:0] $end
+$scope module uut_inst $end
+$var wire 1 # a $end
+$var wire 1 ' and1_out $end
+$var wire 1 ( and2_out $end
+$var wire 1 $ b $end
+$var wire 1 % c $end
+$var wire 1 " h_c $end
+$var wire 1 ) or_out $end
+$var wire 1 ! s $end
+$var wire 1 * xor1_out $end
+$var wire 1 + xor2_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+0'
+b0 &
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1+
+1%
+b1 &
+#20
+1*
+1!
+1+
+1$
+0%
+b10 &
+#30
+1"
+1)
+0!
+0+
+1(
+1%
+b11 &
+#40
+0"
+0)
+1!
+1+
+0(
+1#
+0$
+0%
+b100 &
+#50
+1"
+1)
+0!
+0+
+1(
+1%
+b101 &
+#60
+0*
+1'
+0!
+0+
+0(
+1$
+0%
+b110 &
+#70
+1!
+1+
+1%
+b111 &
+#80
+b1000 &
