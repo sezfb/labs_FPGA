@@ -1,0 +1,19 @@
+
+// CPU_16.pdf not declareted changes
+
+Immediate :
+[15:14] [13:11] [10] [9:8] [7:0]
+  00      DDD    M   XX   IMM8
+
+DDD  – destination register
+M    – mode
+XX   – unused
+IMM8 – 8-bit value
+
+If M = 0:
+Operation: R[DDD][7:0] <= IMM8
+
+If M = 1:
+Operation: R[DDD][15:8] <= IMM8
+
+// iverilog -o run CPU_tb.v components/*.v

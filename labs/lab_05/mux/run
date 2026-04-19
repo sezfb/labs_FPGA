@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001db609c97b0 .scope module, "mux_tb" "mux_tb" 2 3;
+ .timescale -9 -12;
+v000001db60872e60_0 .var "operandA", 7 0;
+v000001db60872f00_0 .var "operandB", 7 0;
+v000001db60872fa0_0 .net "out_mux", 7 0, L_000001db608730e0;  1 drivers
+v000001db60873040_0 .var "sel_in", 0 0;
+S_000001db609c9ba0 .scope module, "uut" "mux" 2 11, 3 1 0, S_000001db609c97b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "operandA";
+    .port_info 1 /INPUT 8 "operandB";
+    .port_info 2 /INPUT 1 "sel_in";
+    .port_info 3 /OUTPUT 8 "out_mux";
+v000001db60873510_0 .net "operandA", 7 0, v000001db60872e60_0;  1 drivers
+v000001db609c9d30_0 .net "operandB", 7 0, v000001db60872f00_0;  1 drivers
+v000001db60872d20_0 .net "out_mux", 7 0, L_000001db608730e0;  alias, 1 drivers
+v000001db60872dc0_0 .net "sel_in", 0 0, v000001db60873040_0;  1 drivers
+L_000001db608730e0 .functor MUXZ 8, v000001db60872f00_0, v000001db60872e60_0, v000001db60873040_0, C4<>;
+    .scope S_000001db609c97b0;
+T_0 ;
+    %vpi_call 2 21 "$display", "\012time\011A\011B\011sel\011out" {0 0 0};
+    %vpi_call 2 22 "$monitor", "%0t\011%0d\011%0d\011%b\011%0d\012", $time, v000001db60872e60_0, v000001db60872f00_0, v000001db60873040_0, v000001db60872fa0_0 {0 0 0};
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v000001db60872e60_0, 0, 8;
+    %pushi/vec4 3, 0, 8;
+    %store/vec4 v000001db60872f00_0, 0, 8;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001db60873040_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001db60873040_0, 0, 1;
+    %vpi_call 2 31 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux_tb.v";
+    "mux.v";
