@@ -1,0 +1,276 @@
+$date
+	Tue May 19 19:49:39 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test_sum $end
+$var wire 4 ! res_ref [3:0] $end
+$var wire 4 " res_my [3:0] $end
+$var wire 1 # cr $end
+$var wire 1 $ cm $end
+$var wire 1 % Ci $end
+$var wire 4 & Bin [3:0] $end
+$var wire 4 ' Ain [3:0] $end
+$var reg 4 ( Ain_r [3:0] $end
+$var reg 4 ) Bin_r [3:0] $end
+$var reg 1 % Ci_r $end
+$scope module my_block $end
+$var wire 4 * Ain [3:0] $end
+$var wire 4 + Bin [3:0] $end
+$var wire 1 % Ci $end
+$var wire 4 , Sout [3:0] $end
+$var wire 1 $ Co $end
+$var wire 4 - C [3:0] $end
+$scope module sum1 $end
+$var wire 1 . A $end
+$var wire 1 / B $end
+$var wire 1 % Cin $end
+$var wire 1 0 Cout $end
+$var wire 1 1 Res $end
+$var wire 1 2 S $end
+$var wire 1 3 c1 $end
+$var wire 1 4 c2 $end
+$upscope $end
+$scope module sum2 $end
+$var wire 1 5 A $end
+$var wire 1 6 B $end
+$var wire 1 7 Cin $end
+$var wire 1 8 Cout $end
+$var wire 1 9 Res $end
+$var wire 1 : S $end
+$var wire 1 ; c1 $end
+$var wire 1 < c2 $end
+$upscope $end
+$scope module sum3 $end
+$var wire 1 = A $end
+$var wire 1 > B $end
+$var wire 1 ? Cin $end
+$var wire 1 @ Cout $end
+$var wire 1 A Res $end
+$var wire 1 B S $end
+$var wire 1 C c1 $end
+$var wire 1 D c2 $end
+$upscope $end
+$scope module sum4 $end
+$var wire 1 E A $end
+$var wire 1 F B $end
+$var wire 1 G Cin $end
+$var wire 1 H Cout $end
+$var wire 1 I Res $end
+$var wire 1 J S $end
+$var wire 1 K c1 $end
+$var wire 1 L c2 $end
+$upscope $end
+$upscope $end
+$scope module ref_block $end
+$var wire 4 M Ain [3:0] $end
+$var wire 4 N Bin [3:0] $end
+$var wire 1 % Ci $end
+$var wire 4 O Sout [3:0] $end
+$var wire 1 # Co $end
+$var reg 5 P S [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11 P
+b11 O
+b10 N
+b1 M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+1:
+19
+08
+07
+16
+05
+04
+03
+12
+11
+00
+0/
+1.
+b0 -
+b11 ,
+b10 +
+b1 *
+b10 )
+b1 (
+b1 '
+b10 &
+0%
+0$
+0#
+b11 "
+b11 !
+$end
+#50
+b111 "
+b111 ,
+1B
+1A
+b111 !
+b111 O
+1=
+b111 P
+b101 '
+b101 (
+b101 *
+b101 M
+#100
+0B
+b1011 "
+b1011 ,
+1J
+0A
+1I
+b1011 !
+b1011 O
+0=
+1F
+b1011 P
+b1 '
+b1 (
+b1 *
+b1 M
+b1010 &
+b1010 )
+b1010 +
+b1010 N
+#150
+b1111 "
+b1111 ,
+1B
+1A
+b1111 !
+b1111 O
+1=
+b1111 P
+b101 '
+b101 (
+b101 *
+b101 M
+#200
+1?
+18
+0:
+1<
+1B
+0J
+17
+0A
+0I
+b11 -
+10
+b100 !
+b100 O
+0=
+0F
+b100 "
+b100 ,
+02
+14
+b100 P
+b1 '
+b1 (
+b1 *
+b1 M
+b10 &
+b10 )
+b10 +
+b10 N
+1%
+#250
+1J
+1G
+b111 -
+1@
+b1000 "
+b1000 ,
+0B
+1D
+1A
+b1000 !
+b1000 O
+1=
+b1000 P
+b101 '
+b101 (
+b101 *
+b101 M
+#300
+0G
+0$
+0@
+b11 -
+0H
+1B
+0D
+b1100 "
+b1100 ,
+1J
+0L
+0A
+1I
+b1100 !
+b1100 O
+0=
+1F
+b1100 P
+b1 '
+b1 (
+b1 *
+b1 M
+b1010 &
+b1010 )
+b1010 +
+b1010 N
+#350
+1$
+1H
+0J
+1L
+1G
+b1111 -
+1@
+b0 "
+b0 ,
+0B
+1D
+1A
+b0 !
+b0 O
+1#
+1=
+b10000 P
+b101 '
+b101 (
+b101 *
+b101 M
+#400
